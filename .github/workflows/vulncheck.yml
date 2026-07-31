@@ -29,3 +29,5 @@ jobs:
       - name: Run govulncheck
         run: govulncheck -show verbose ./...
         shell: bash
+        env:
+          GOFLAGS: -mod=mod
